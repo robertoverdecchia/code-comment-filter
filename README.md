@@ -1,6 +1,6 @@
-Code comment matcher
+Code comment filter
 ----------------
-Script matching comments in a git repository source code to a predefined set of patterns.
+Script filtering comments present a git repository source code according to a predefined set of patterns.
 
 Dependencies
 ----------------
@@ -21,7 +21,7 @@ The script takes as input the file `patterns.txt`, in which the patterns to be m
 
 Output
 ----------------
-The output of the script is stored in the file `output_parsing.tsv`, which contains the source code comments matching the patterns.
+The output of the script is stored in the file `output_parsing.tsv`, which contains the source code comments matching the predefined patterns.
 The three columns of the output file are:
  * File name: Location of the souce code file in which the matched comment appears
  * Keyword: Pattern keyword(s) contained in the matched comment

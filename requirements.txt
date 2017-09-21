@@ -1,0 +1,2 @@
+GitPython==2.1.5
+comment-parser==1.0.3

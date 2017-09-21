@@ -8,6 +8,8 @@ from git import Repo
 
 git_repository_url = "https://github.com/r0ket/r0ket.git"  # URL of git repository
 MIME = "text/x-c"  # MIME type
+# extensions of the files to be considered during parsing
+extensions = [".c", ".h"]
 
 L = list()
 C = list()
@@ -21,7 +23,7 @@ print "Comment parsing started..."
 # recursively find files starting from root folder
 for root, dirs, files in os.walk("repository_root"):
     for filename in files:
-        if filename.lower().endswith((".c", ".h")):  # filter for given file extention
+        if filename.lower().endswith(tuple(extensions)):  # filter for given file extention
             L.append(os.path.join(root, filename))
             # parse comments according to hardcoded MIME
             c = (comment_parser.extract_comments(L[i], MIME))

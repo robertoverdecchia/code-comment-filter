@@ -1,9 +1,9 @@
-# Python comment matcher
-
+Python comment matcher
+----------------
 Script matching comments of a git repository according to a predefined set of patterns.
 
--------
-### Dependencies
+Dependencies
+----------------
 This script relies on the following packages:
  * GitPython==2.1.5
  * comment-parser==1.0.3
@@ -11,31 +11,27 @@ This script relies on the following packages:
 To check and install the dependencies simply run the command:
 pip install -r dependencies.txt
 
--------
-
-### Usage
+Usage
+----------------
 From the root directory execute:
-```python parse.py```
+`python parse.py`
 
--------
+Input
+----------------
+The script takes as input the file `patterns.txt`, in which the patterns to be matched are specified.
 
-### Input
-The script takes as input the file ```patterns.txt```, in which the patterns to be matched are specified.
-
--------
-
-### Output
-The output of the script is contained in the file ```output_parsing.tsv```, containing the source code comments matching the patterns.
+Output
+----------------
+The output of the script is contained in the file `output_parsing.tsv`, containing the source code comments matching the patterns.
 The three columns of the output file are:
  * File name: Souce code file in which the matched comment appears
  * Comment: Comment containing one or more of the predefined pattern 
  * Keyword: Pattern keyword(s) contained in the comment
 
--------
-
-### Notes
- * The repository to be analyzed is currently hardcoded in the script. Change the variable ```git_repository_url``` to utilize a different repository.
- * The language of the repository has to be specified in the MIME type variable ```MIME```. For the mapping of languages to MIME types refer to the documentation of the [comment_parser](https://pypi.python.org/pypi/comment_parser/1.0.3) package.
+Notes
+----------------
+ * The repository to be analyzed is currently hardcoded in the script. Change the variable `git_repository_url` to utilize a different repository.
+ * The language of the repository has to be specified in the MIME type variable `MIME`. For the mapping of languages to MIME types refer to the documentation of the [comment_parser](https://pypi.python.org/pypi/comment_parser/1.0.3) package.
 
 * Currently supported languages:
   * C
@@ -45,13 +41,11 @@ The three columns of the output file are:
   * Javascript
   * Bash/Sh
   
--------
-
-## Credits and license
-
+Credits and license
+----------------
 Author: 
 * Roberto Verdecchia (roberto.verdecchia@gssi.it)
 
 Sample patterns were taken from the dataset of the research "An Exploratory Study on Self-Admitted Technical Debt" by Potdar et. al available [here](http://users.encs.concordia.ca/~eshihab/data/ICSME2014/satd.html).
 
-This project is licensed under the MIT License - see the file ```license.txt```
+This project is licensed under the MIT License - see the file `license.txt`

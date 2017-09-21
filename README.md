@@ -1,4 +1,4 @@
-Python comment matcher
+Code comment matcher
 ----------------
 Script matching comments of a git repository according to a predefined set of patterns.
 

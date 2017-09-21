@@ -44,7 +44,7 @@ Notes
 Credits and license
 ----------------
 Author: 
-* Roberto Verdecchia (roberto.verdecchia@gssi.it)
+* Roberto Verdecchia (myFirstName.mySurName@gssi.it)
 
 Sample patterns were taken from the dataset of the research "An Exploratory Study on Self-Admitted Technical Debt" by Potdar et. al available [here](http://users.encs.concordia.ca/~eshihab/data/ICSME2014/satd.html).
 

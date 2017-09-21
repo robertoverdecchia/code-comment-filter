@@ -29,7 +29,7 @@ The three columns of the output file are:
 
 Notes
 ----------------
- * The got repository to be analyzed is currently hardcoded in the script. Change the variable `git_repository_url` to utilize a different repository.
+ * The git repository to be analyzed is currently hardcoded in the script. Change the variable `git_repository_url` to utilize a different repository.
  * The language of the repository has to be specified in the MIME type variable `MIME`. For the mapping of languages to MIME types refer to the documentation of the [comment_parser](https://pypi.python.org/pypi/comment_parser/1.0.3) package.
  * Extensions types of the files to be considered during the parsing have to be specified in the extension variable `extensions`
 

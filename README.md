@@ -1,6 +1,6 @@
 Code comment matcher
 ----------------
-Script matching comments of a git repository according to a predefined set of patterns.
+Script matching comments in a git repository source code to a predefined set of patterns.
 
 Dependencies
 ----------------
@@ -21,16 +21,17 @@ The script takes as input the file `patterns.txt`, in which the patterns to be m
 
 Output
 ----------------
-The output of the script is contained in the file `output_parsing.tsv`, containing the source code comments matching the patterns.
+The output of the script is stored in the file `output_parsing.tsv`, which contains the source code comments matching the patterns.
 The three columns of the output file are:
- * File name: Souce code file in which the matched comment appears
- * Comment: Comment containing one or more of the predefined pattern 
- * Keyword: Pattern keyword(s) contained in the comment
+ * File name: Location of the souce code file in which the matched comment appears
+ * Keyword: Pattern keyword(s) contained in the matched comment
+ * Comment: Content of the matched source code comment
 
 Notes
 ----------------
- * The repository to be analyzed is currently hardcoded in the script. Change the variable `git_repository_url` to utilize a different repository.
+ * The got repository to be analyzed is currently hardcoded in the script. Change the variable `git_repository_url` to utilize a different repository.
  * The language of the repository has to be specified in the MIME type variable `MIME`. For the mapping of languages to MIME types refer to the documentation of the [comment_parser](https://pypi.python.org/pypi/comment_parser/1.0.3) package.
+ * Extensions types of the files to be considered during the parsing have to be specified in the extension variable `extensions`
 
 * Currently supported languages:
   * C

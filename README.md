@@ -8,8 +8,7 @@ This script relies on the following packages:
  * GitPython==2.1.5
  * comment-parser==1.0.3
 
-To check and install the dependencies simply run the command:
-pip install -r dependencies.txt
+To check and install the dependencies simply run the command `pip install -r dependencies.txt`
 
 Usage
 ----------------

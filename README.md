@@ -1,6 +1,6 @@
 Code comment filter
 ----------------
-Script filtering comments present a git repository source code according to a predefined set of patterns.
+Script filtering comments present in a git repository source code according to a predefined set of patterns.
 
 Dependencies
 ----------------
